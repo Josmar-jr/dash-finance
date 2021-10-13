@@ -1,0 +1,47 @@
+.modalChart {
+  color: red;
+  background-color: blue;
+}
+
+.apexcharts-tooltip {
+  border-radius: 0 !important;
+  border: none !important;
+
+  background: red;
+  color: red;
+}
+
+.apexcharts-tooltip {
+  border-radius: 0 !important;
+  border: none !important;
+
+  background: #2d323ebb;
+}
+.apexcharts-xaxistooltip.apexcharts-active {
+  display: none;
+}
+.apexcharts-toolbar {
+  display: none;
+}
+
+.modal-chart {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  font-size: 12px;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+
+  color: #ffffff;
+}
+
+.modal-chart :nth-child(2) {
+  padding-bottom: 14px;
+}
