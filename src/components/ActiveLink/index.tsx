@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import Link, { LinkProps } from "next/link";
 import { cloneElement, ReactElement } from "react";
 
@@ -13,7 +13,7 @@ export function ActiveLink({
   ...rest
 }: ActiveLinkProps) {
   const { asPath } = useRouter();
-
+  
   let isActive = false;
 
   if (shouldMatchHref && (asPath === rest.href || asPath === rest.as)) {

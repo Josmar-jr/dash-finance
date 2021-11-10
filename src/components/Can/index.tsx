@@ -17,5 +17,5 @@ export function Can({ children, permissions, roles }: CanProps) {
     return null;
   }
 
-  return <>{children}</>;
+  return <div>{children}</div>;
 }

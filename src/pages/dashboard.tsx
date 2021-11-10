@@ -101,7 +101,7 @@ export default function Dashboard() {
           <Flex w="full" mt="12" maxW={1480} mx="auto" px="4">
             <Sidebar />
 
-            {/* <Flex flexDir="column" flex="1" align="flex-start">
+            <Flex flexDir="column" flex="1" align="flex-start">
               <HStack spacing="16">
                 <HighlightCard
                   title="Entradas"
@@ -137,7 +137,7 @@ export default function Dashboard() {
                   width={800}
                 />
               </Box>
-            </Flex> */}
+            </Flex>
           </Flex>
         </Flex>
       </Can>

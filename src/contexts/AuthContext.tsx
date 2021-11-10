@@ -46,7 +46,7 @@ export function signOut() {
   destroyCookie(undefined, "dashFinance.token");
   destroyCookie(undefined, "dashFinance.refreshToken");
 
-  authChannel.postMessage('signOut');
+  authChannel.postMessage("signOut");
 
   Router.push("/");
 }
@@ -114,7 +114,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
       api.defaults.headers["Authorization"] = `Bearer ${token}`;
 
-      toast.success('Usuário logado com sucesso!');
+      toast.success("Usuário logado com sucesso!");
+
+      authChannel.postMessage("signIn");
 
       Router.push("/dashboard");
     } catch (err) {
